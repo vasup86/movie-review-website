@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height:100vh;
+                background-image: url("resources/cool-background.png");
+               
+            }
+            h2{
+                padding-top:25px;
+            }
+            .login2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 75%;
+                width: 30%;
+            }
+            form{
+                /*background-color: #e0e0e0; */
+                width: 80%; 
+            }
+            .login3{
+               border-radius: 50px;
+background: #eeeeee;
+box-shadow:  20px 20px 60px #cacaca,
+             -20px -20px 60px #ffffff;
+                
+                height: 35%;
+                width: 80%;
+                display: flex;
+                padding: 15px 0 15px 0;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .form-control{
+                background-color:  white;
+                margin: 5px;
+            }
+            input{
+                background-color: whitesmoke!important;
+                width:95%;
+            }
+            button{
+                background-color:#147ce5!important;
+                color: white!important;   
+            }
+        </style>
+        <h2>Popcorn Perspectives</h2>
+        <div class="login2">
+            <div class="login3">
+                <h3>Login</h3>
+                <form action= "login"   method="post" >
+
+                  <input
+                    class='form-control'
+                    type="email"
+                    name ="email"   
+                    placeholder="Email"
+
+                  />
+                  <input
+                    class='form-control'
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                  <button
+                    class='form-control'
+                    type="submit"
+                    value="Login"
+                  >Login </button>
+                </form>
+                </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+        <script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
+    </body>
+</html>
